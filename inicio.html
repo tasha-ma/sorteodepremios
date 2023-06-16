@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo de Premios con Botellas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="conin.jpg" alt="logo de la escuela">
+            <h2 class="nombre-proyecto">Recolector de botellas</h2>
+        </div>
+    </header>
+
+    <div class="container__cover div__offset">
+        <div class="cover">
+            <section class="text___cover">
+                <h1 class ="titulo1">¿HAS GANADO UN PREMIO? VEN Y COMPRUEBA QUE HAS GANO POR SOLO PONER TU BOTELLA EN EL CONTENEDOR </h1>
+                <p class="sub1">Este proyecto nos ayuda a insentir a los estudiantes del colegio conin a la reutilización de las botellas PET, muchas de ellas hoy en día son desperdiciadas, pero con este pequeño paso ayudamos a crear un mejor futuro no solo de nuestras familias futuras si no tambien sobre el de nosotros mismos</p>
+            </section>
+            <section class="image__cover">
+                <img src="imagen1.jpg">
+            </section>
+        </div>
+    </div>
+
+    <h1 class="titulo">¿Quienes somos?</h1>
+    <div class="contenedor">
+        <div class="carta">
+            <img src="imagen4.jpg">
+            <h4 class="titulos">Proposito Escolar</h4>
+            <p>
+                Los alumnos obtengan una recompensa y aprendan a reciclar las botellas para ayudar a nuestro planeta y su contaminacion con el plastico</p>
+        </div>
+
+    <div class="carta">
+        <img src="imagen3.jpg">
+        <h4 class="titulos">Proposito Social</h4>
+        <p>
+            La gente pueda empezar a botar las botellas donde corresponde a traves de un contenedor de recoleccion de botellas</p>
+    </div>
+
+    <div class="carta">
+        <img src="imagen9.jpg">
+        <h4 class="titulos" >¿Como funciona?</h4>
+        <p>
+            Solo tienes que ingresar la botella al recolector seleccionado si resultas ser ganador preciona el boton para saber tu premio</p>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div class="contenedor" >
+    <div class="contenedor-botones" style="text-align: center;">
+        <button class="button" type ="button"  onclick="numero()">
+        <span>Genera tu numero</span>  
+        <br>
+        </button>
+        <br>
+    <div class type="numeroGenerado" id="numeroGenerado" >
+        <h4>Da click en el boton de arriba para generar tu numero</h4>
+    </div>
+</body>
+</html>
+
+
+<script>
+    function numero(){
+        let n = Math.floor(Math.random()*10)/2
+        document.getElementById("numeroGenerado").innerHTML = n
+    }
+</script>
